@@ -1,0 +1,1358 @@
+{
+  "id": "ch-02",
+  "title": "小熊回家路",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "backgroundUrl": "images/bg-lighthouse-gate.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 18,
+            "y": 28
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 40,
+            "y": 28
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "cloud-slide",
+          "assetId": "prop-cloud",
+          "position": {
+            "x": 55,
+            "y": 22
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "清晨的阳光洒在灯塔顶上，光之花在水晶座里发出暖暖的光。小熊推着木头手推车，车里的小花仰着脑袋，像在说早安。小熊望着山下说：「好想回家呀，我的蜂蜜小木屋在森林里呢。」可是下山的路又高又陡，石阶像长长的楼梯，手推车怎么下得去呢？小勇士挠挠头，心想：要是有个滑滑梯就好啦。快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-01-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "云",
+            "pinyin": "yún",
+            "icon": "☁️"
+          },
+          {
+            "char": "石",
+            "pinyin": "shí",
+            "icon": "🪨"
+          },
+          {
+            "char": "山",
+            "pinyin": "shān",
+            "icon": "⛰️"
+          }
+        ],
+        "correctCharId": "云",
+        "onCorrect": {
+          "magicDialogue": "太棒了！「云」字刚念出来，一朵胖乎乎的白云就飘下来了，软绵绵的，像棉花糖做的滑梯。小熊和小勇士推着手推车坐上去，呼啦啦——一下子滑到了山脚下，稳稳当当的，小熊开心得手舞足蹈。",
+          "audio": "audio/ch02-scene-01-correct.mp3",
+          "spriteAction": {
+            "spriteId": "cloud-slide",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "jump"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "jump"
+            }
+          ],
+          "completionDialogue": "白云滑梯慢慢散开，变成一朵小云彩飘在天上。小熊拍拍手推车，说：「谢谢你呀，小云朵！」小勇士回头望望灯塔，光之花还在亮晶晶地闪着。他们沿着小路往前走，下一站是彩虹谷呢。",
+          "completionAudio": "audio/ch02-scene-01-complete.mp3",
+          "nextScene": "scene-02",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "cloud-slide"
+          ]
+        },
+        "onWrong": {
+          "山": {
+            "dialogue": "「山」字闪了一下，山路咕噜噜地长高了，石阶变得更多更陡，数都数不过来。小熊数到第十个就晕头转向，扶着脑袋说：「哎呀，我的头都绕晕啦！」这个办法不太妙，快换个字吧！",
+            "audio": "audio/ch02-scene-01-wrong-shan.mp3"
+          },
+          "石": {
+            "dialogue": "骨碌碌滚来几块圆石头，叠成歪歪扭扭的石头台阶，晃晃悠悠的像跷跷板，谁也不敢踩上去。小熊缩着脖子说：「这台阶会跳舞呀！」这个办法不太合适，再想想别的吧！",
+            "audio": "audio/ch02-scene-01-wrong-shi.mp3"
+          }
+        }
+      },
+      "recapCaption": "云梯下山"
+    },
+    {
+      "id": "scene-02",
+      "backgroundUrl": "images/bg-rainbow-valley.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 18,
+            "y": 28
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 40,
+            "y": 28
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "seed-wind",
+          "assetId": "prop-wind",
+          "position": {
+            "x": 52,
+            "y": 20
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "彩虹谷到了！那些彩虹色的石柱像巨人丢下的积木，阳光照得七彩光斑一闪一闪的。小勇士还记得，光之花就是从最高的石柱顶上摘下来的。小熊从手推车里捧出一把种子，那是车里的花结出的新种子。「我想让这里也开满花，」小熊说，「可是一丝风也没有，种子撒不远。」快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-02-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "雨",
+            "pinyin": "yǔ",
+            "icon": "🌧️"
+          },
+          {
+            "char": "土",
+            "pinyin": "tǔ",
+            "icon": "🟤"
+          },
+          {
+            "char": "风",
+            "pinyin": "fēng",
+            "icon": "💨"
+          }
+        ],
+        "correctCharId": "风",
+        "onCorrect": {
+          "magicDialogue": "太厉害了！「风」字一出口，一阵温柔的银色微风吹过来，轻轻托起种子，像一群小伞兵飘向整个山谷。种子落进石柱间的草地里，乖乖地躺好了，等着发芽呢。",
+          "audio": "audio/ch02-scene-02-correct.mp3",
+          "spriteAction": {
+            "spriteId": "seed-wind",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "walk"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "walk"
+            }
+          ],
+          "completionDialogue": "银色微风绕着小熊转了一圈，像是在说「再见」。小熊把手推车里的花盆摆正，笑着说：「等下次来，这里一定开满五颜六色的花啦！」小勇士点点头，两个小伙伴继续往前走，前面就是低语沼泽了。",
+          "completionAudio": "audio/ch02-scene-02-complete.mp3",
+          "nextScene": "scene-03",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "seed-wind"
+          ]
+        },
+        "onWrong": {
+          "雨": {
+            "dialogue": "细细的小雨飘下来，把种子淋得湿哒哒的，黏在小熊的手掌上，怎么甩也甩不下来。小熊甩甩手，又用嘴巴吹吹，种子还是粘着，像在说「我要跟你走」。这个办法不太妙，换个字试试吧！",
+            "audio": "audio/ch02-scene-02-wrong-yu.mp3"
+          },
+          "土": {
+            "dialogue": "噗的一声，地上扬起一个小土堆，把种子全埋进去了。小熊蹲下来，吭哧吭哧挖了半天，才把种子一颗一颗找回来，鼻尖上全是土。这个办法不太合适，快换个字吧！",
+            "audio": "audio/ch02-scene-02-wrong-tu.mp3"
+          }
+        }
+      },
+      "recapCaption": "风送种子"
+    },
+    {
+      "id": "scene-03",
+      "backgroundUrl": "images/bg-swamp.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 18,
+            "y": 28
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 40,
+            "y": 28
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "waking-flowers",
+          "assetId": "prop-flower",
+          "position": {
+            "x": 52,
+            "y": 24
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "低语沼泽到了。上次那些黑紫浓雾被「风」字吹散后，露出了结实的木栈道和白色水仙花。可是今天，栈道岔成了好几条，白水仙们都闭着花苞打瞌睡，谁也不肯指路。青蛙在草丛里咕咕呱呱地唱歌，可它们也不知道该走哪条路。小勇士和小熊站在岔路口，你看看我，我看看你。快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-03-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "花",
+            "pinyin": "huā",
+            "icon": "🌸"
+          },
+          {
+            "char": "泥",
+            "pinyin": "ní",
+            "icon": "🟤"
+          },
+          {
+            "char": "草",
+            "pinyin": "cǎo",
+            "icon": "🌿"
+          }
+        ],
+        "correctCharId": "花",
+        "onCorrect": {
+          "magicDialogue": "太聪明了！「花」字刚念出来，白水仙们一朵接一朵张开花瓣，醒了过来。它们齐齐朝着森林的方向点头，像一排小小的白路标。小熊拍拍手说：「哇，你们好呀，谢谢你们指路！」",
+          "audio": "audio/ch02-scene-03-correct.mp3",
+          "spriteAction": {
+            "spriteId": "waking-flowers",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "walk"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "walk"
+            }
+          ],
+          "completionDialogue": "白水仙们摇摇摆摆，像是在说「不客气」。小勇士和小熊沿着花朵指的方向踏上栈道，每一步都踩得稳稳的。青蛙们唱得更欢了，像是在送行。穿过沼泽，前面就是红土荒漠了。",
+          "completionAudio": "audio/ch02-scene-03-complete.mp3",
+          "nextScene": "scene-04",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "waking-flowers"
+          ]
+        },
+        "onWrong": {
+          "草": {
+            "dialogue": "青草嗖嗖地疯长，把几条栈道全盖住了，这下更分不清哪条是哪条了。小熊扒开草叶，却看见更多的草，着急地说：「哎呀，草把路都藏起来啦！」这个办法不太妙，快换个字吧！",
+            "audio": "audio/ch02-scene-03-wrong-cao.mp3"
+          },
+          "泥": {
+            "dialogue": "沼泽里的泥巴咕嘟咕嘟冒起泡，噗噗溅了两个小伙伴一身泥点子。小熊看着自己身上的泥，苦笑着说：「这下我变成泥巴熊啦！」这个办法不太合适，再想想别的吧！",
+            "audio": "audio/ch02-scene-03-wrong-ni.mp3"
+          }
+        }
+      },
+      "recapCaption": "花苞指路"
+    },
+    {
+      "id": "scene-04",
+      "backgroundUrl": "images/bg-desert.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 18,
+            "y": 30
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 40,
+            "y": 30
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "spring",
+          "assetId": "prop-spring",
+          "position": {
+            "x": 52,
+            "y": 26
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "红土荒漠到了，大地还是干裂得像龟壳花纹，太阳火辣辣的。上次那场「雨」字甘霖后钻出的小草，现在晒得蔫蔫的，耷拉着脑袋。小熊的水壶也空了，他摇了摇，一滴水都没有。小勇士舔舔干干的嘴唇，说：「要是有一汪清泉就好了，给小草喝饱，也给水壶灌满。」快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-04-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "水",
+            "pinyin": "shuǐ",
+            "icon": "💧"
+          },
+          {
+            "char": "沙",
+            "pinyin": "shā",
+            "icon": "🏜️"
+          },
+          {
+            "char": "日",
+            "pinyin": "rì",
+            "icon": "☀️"
+          }
+        ],
+        "correctCharId": "水",
+        "onCorrect": {
+          "magicDialogue": "太棒了！「水」字一闪，地缝里咕嘟咕嘟涌出一汪亮晶晶的清泉，像钻石一样闪闪发光。小草咕咚咕咚喝饱了水，重新挺直了腰，绿油油的。小熊赶紧把水壶灌得满满的，喝了一口，甜甜的！",
+          "audio": "audio/ch02-scene-04-correct.mp3",
+          "spriteAction": {
+            "spriteId": "spring",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "jump"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "jump"
+            }
+          ],
+          "completionDialogue": "清泉在阳光下闪着光，小草们摇摇晃晃，像是在说谢谢。小熊把水壶盖好，拍拍肚子说：「这下不渴啦！」小勇士洗了洗小手，清清凉凉的。他们继续赶路，前面就是回声山洞了。",
+          "completionAudio": "audio/ch02-scene-04-complete.mp3",
+          "nextScene": "scene-05",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "spring"
+          ]
+        },
+        "onWrong": {
+          "日": {
+            "dialogue": "「日」字一亮，太阳以为自己被邀请了，变得更红更大，热浪滚滚而来。两个小伙伴热得像刚出炉的小面包，小熊赶紧躲到手推车的阴影里，呼哧呼哧直喘气。这个办法不太妙，快换个字吧！",
+            "audio": "audio/ch02-scene-04-wrong-ri.mp3"
+          },
+          "沙": {
+            "dialogue": "一小股沙尘暴打着旋儿跑过来，给两个小伙伴每人堆了一头一身的沙子。小熊一抖，哗啦啦往下掉沙子，耳朵里都是。小勇士甩甩头发，沙子像下小雨。这个办法不太合适，再想想别的吧！",
+            "audio": "audio/ch02-scene-04-wrong-sha.mp3"
+          }
+        }
+      },
+      "recapCaption": "清泉解渴"
+    },
+    {
+      "id": "scene-05",
+      "backgroundUrl": "images/bg-cave.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 25,
+            "y": 30
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 45,
+            "y": 30
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "light",
+          "assetId": "prop-light",
+          "position": {
+            "x": 50,
+            "y": 25
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "回声山洞到了。洞口黑漆漆的，像张大嘴巴。上次进来的时候，小勇士还有点害怕呢，可是这次，小勇士挺起胸脯说：「不怕，我知道该怎么做！」山洞里钟乳石滴着水，叮——咚——。石壁上，古老的涂鸦还在：奔跑的小鹿、跳舞的星星、扬帆的小船，像在跟他们打招呼。可是洞里黑乎乎的，什么也看不清。快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-05-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "光",
+            "pinyin": "guāng",
+            "icon": "💡"
+          },
+          {
+            "char": "暗",
+            "pinyin": "àn",
+            "icon": "🌑"
+          },
+          {
+            "char": "风",
+            "pinyin": "fēng",
+            "icon": "💨"
+          }
+        ],
+        "correctCharId": "光",
+        "onCorrect": {
+          "magicDialogue": "太厉害了！「光」字刚念出来，熟悉的金色光球就亮了起来，像一个小太阳漂在洞中央。壁画被照得清清楚楚，小鹿好像在奔跑，星星好像在跳舞。小熊说：「哇，好亮呀，跟上次一样！」小勇士开心地笑了。",
+          "audio": "audio/ch02-scene-05-correct.mp3",
+          "spriteAction": {
+            "spriteId": "light",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "walk"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "walk"
+            }
+          ],
+          "completionDialogue": "金色光球在前面带路，把整个山洞照得暖洋洋的。小勇士指着壁画说：「看，小船和咱们之前渡河的那艘一模一样！」小熊点点头。他们跟着光球穿过山洞，很快就到了洞口，光球慢慢散成小星星，飘走了。",
+          "completionAudio": "audio/ch02-scene-05-complete.mp3",
+          "nextScene": "scene-06",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "light"
+          ]
+        },
+        "onWrong": {
+          "暗": {
+            "dialogue": "「暗」字一出现，山洞变得更黑了，黑得像倒了一整瓶墨水，连小熊的黑鼻头都找不着了。小熊伸手乱摸，摸到了小勇士的胳膊，说：「你在哪儿呀，我看不见啦！」这个办法不太妙，快换个字吧！",
+            "audio": "audio/ch02-scene-05-wrong-an.mp3"
+          },
+          "风": {
+            "dialogue": "一阵冷飕飕的穿堂风刮过，两个小伙伴一起打了个大喷嚏，「阿嚏！」回声在洞里转了三圈才停下来。小熊揉揉鼻子说：「好冷呀！」这个办法不太合适，再想想别的吧！",
+            "audio": "audio/ch02-scene-05-wrong-feng.mp3"
+          }
+        }
+      },
+      "recapCaption": "再亮山洞"
+    },
+    {
+      "id": "scene-06",
+      "backgroundUrl": "images/bg-cave-exit.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 25,
+            "y": 30
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 45,
+            "y": 30
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "vine-gate",
+          "assetId": "prop-gate",
+          "position": {
+            "x": 52,
+            "y": 26
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "山洞出口就在眼前了。上次那块大石头还安静地待在路边，像在跟他们打招呼：「嗨，你们好呀！」可是洞口长满了绿藤蔓，密密麻麻的，像一堵软软的墙。小勇士伸手拽了拽，藤蔓纹丝不动。小熊也来帮忙，两个人一起拉，藤蔓还是紧紧的。小勇士说：「要是藤蔓自己让开一条路就好啦。」快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-06-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "门",
+            "pinyin": "mén",
+            "icon": "🚪"
+          },
+          {
+            "char": "石",
+            "pinyin": "shí",
+            "icon": "🪨"
+          },
+          {
+            "char": "火",
+            "pinyin": "huǒ",
+            "icon": "🔥"
+          }
+        ],
+        "correctCharId": "门",
+        "onCorrect": {
+          "magicDialogue": "太棒了！「门」字一出口，藤蔓像听到了悄悄话，自己弯弯绕绕编成了一扇圆拱门，咯吱一声向两边打开，还顺手开出几朵小白花，像门铃一样挂在门边，可爱极了。",
+          "audio": "audio/ch02-scene-06-correct.mp3",
+          "spriteAction": {
+            "spriteId": "vine-gate",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "walk"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "walk"
+            }
+          ],
+          "completionDialogue": "小勇士和小熊从拱门走出去，藤蔓轻轻晃了晃，好像在说再见。路边的大石头眨眨眼（虽然他没有眼睛），小熊拍拍它说：「我们回来啦！」他们继续往前走，前面就是峡谷断桥了。",
+          "completionAudio": "audio/ch02-scene-06-complete.mp3",
+          "nextScene": "scene-07",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "vine-gate"
+          ]
+        },
+        "onWrong": {
+          "石": {
+            "dialogue": "又骨碌碌滚来几块小石头，把藤蔓压得更密实了，藤蔓还生气地抖了抖叶子，好像在说「别压我」。小熊叹气说：「这下更打不开啦！」这个办法不太妙，快换个字吧！",
+            "audio": "audio/ch02-scene-06-wrong-shi.mp3"
+          },
+          "火": {
+            "dialogue": "小火苗刚凑近藤蔓，藤蔓的叶子上就滚下几颗露珠，滋的一声把它浇灭了，只留下一股烤红薯的香味。小熊吸吸鼻子说：「好香呀，可是门还是没开。」这个办法不太合适，再想想别的吧！",
+            "audio": "audio/ch02-scene-06-wrong-huo.mp3"
+          }
+        }
+      },
+      "recapCaption": "藤蔓开门"
+    },
+    {
+      "id": "scene-07",
+      "backgroundUrl": "images/bg-bridge.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 20,
+            "y": 20
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 40,
+            "y": 20
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "sunny",
+          "assetId": "prop-sun",
+          "position": {
+            "x": 55,
+            "y": 15
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "峡谷断桥到了。上次那座缺了木板的桥，已经被「木」字修好了，中间那块新木板还稳稳当当的，像老朋友一样等着他们。可是，山里飘来一朵小雨云，淅淅沥沥下起毛毛雨，把桥面淋得湿漉漉的。小熊推着手推车刚走上去，轮子就打滑，咕噜噜往后退。小熊赶紧刹住车，说：「太滑了，我不敢走呀！」小勇士抬头看看，小雨云正笑眯眯地飘着，没有打雷没有闪电。快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-07-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "冰",
+            "pinyin": "bīng",
+            "icon": "🧊"
+          },
+          {
+            "char": "雨",
+            "pinyin": "yǔ",
+            "icon": "🌧️"
+          },
+          {
+            "char": "日",
+            "pinyin": "rì",
+            "icon": "☀️"
+          }
+        ],
+        "correctCharId": "日",
+        "onCorrect": {
+          "magicDialogue": "太聪明了！「日」字一亮，太阳公公从云朵后面探出脸来，暖洋洋的阳光洒在桥面上。水汽升上天，变成一道小小的彩虹，挂在桥头。桥面干爽爽的，小熊推着手推车稳稳地走过去了。",
+          "audio": "audio/ch02-scene-07-correct.mp3",
+          "spriteAction": {
+            "spriteId": "sunny",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "walk"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "walk"
+            }
+          ],
+          "completionDialogue": "小雨云被太阳公公哄走了，彩虹也慢慢淡了。小熊回头看看彩虹，说：「好漂亮呀！」小勇士拉着小熊的手，两个小伙伴过了桥，前面就是大河渡口了。",
+          "completionAudio": "audio/ch02-scene-07-complete.mp3",
+          "nextScene": "scene-08",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "sunny"
+          ]
+        },
+        "onWrong": {
+          "雨": {
+            "dialogue": "小雨云高兴坏了，越下越起劲，桥面湿上加湿，水珠子在木板上跳踢踏舞。小熊刚迈一步就滑了一下，赶紧扶住手推车。这个办法不太妙，快换个字吧！",
+            "audio": "audio/ch02-scene-07-wrong-yu.mp3"
+          },
+          "冰": {
+            "dialogue": "桥面咔嚓一声结了层亮晶晶的冰，滑得像溜冰场。小熊刚迈一步就转了个圈，幸好被小勇士拉住了，差点摔个屁股蹲。这个办法不太合适，再想想别的吧！",
+            "audio": "audio/ch02-scene-07-wrong-bing.mp3"
+          }
+        }
+      },
+      "recapCaption": "晒干桥面"
+    },
+    {
+      "id": "scene-08",
+      "backgroundUrl": "images/bg-river.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 20,
+            "y": 32
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 40,
+            "y": 32
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "boat",
+          "assetId": "prop-boat",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "大河渡口到了！河水哗啦啦地唱歌，波光粼粼，宽得像操场。小勇士记得，上次就是从这里渡河去灯塔的，那时候还有一群小鱼吐着泡泡送行呢。可是上次的小木船早就漂走了，河面上空空的。小熊说：「没有船，我们怎么过河呀？」小勇士蹲在岸边，忽然，水里冒出一串亮晶晶的泡泡——是那些小鱼！它们又回来了，咕嘟咕嘟吐着泡泡，像是在说：「你好呀，你好呀！」快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-08-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "木",
+            "pinyin": "mù",
+            "icon": "🌲"
+          },
+          {
+            "char": "船",
+            "pinyin": "chuán",
+            "icon": "🚢"
+          },
+          {
+            "char": "沉",
+            "pinyin": "chén",
+            "icon": "💧"
+          }
+        ],
+        "correctCharId": "船",
+        "onCorrect": {
+          "magicDialogue": "太棒了！「船」字金光一闪，一艘新的小木船摇摇晃晃出现在河面上，船头还系着一朵小野花。一群小鱼咕嘟咕嘟吐着泡泡围了上来，亮晶晶的泡泡在阳光下像一串串小珍珠。小熊蹲下来，伸手摸摸水，小鱼们轻轻碰碰他的手指，痒痒的。",
+          "audio": "audio/ch02-scene-08-correct.mp3",
+          "spriteAction": {
+            "spriteId": "boat",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "walk"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "walk"
+            }
+          ],
+          "completionDialogue": "小勇士和小熊把手推车搬上船，然后自己也跳上去。小鱼们围着船游了一圈，又吐了一串泡泡，像是在说「一路顺风」。小勇士朝小鱼挥挥手，小熊也挥挥手。船儿慢慢地漂向对岸，渡过河，前面就是奇异果林了。",
+          "completionAudio": "audio/ch02-scene-08-complete.mp3",
+          "nextScene": "scene-09",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "boat"
+          ]
+        },
+        "onWrong": {
+          "木": {
+            "dialogue": "「木」字一闪，天上又掉下来一根大木头，在水面弹了两下就顺水漂走了，连再见都没说。小熊看着木头漂远，说：「它怎么不帮忙呀？」这个办法不太妙，快换个字吧！",
+            "audio": "audio/ch02-scene-08-wrong-mu.mp3"
+          },
+          "沉": {
+            "dialogue": "扑通！一块圆滚滚的大石头砸进河里，溅起好大的水花，把小熊淋成了「落汤熊」。小熊甩甩头上的水，哭笑不得地说：「我变成落汤熊啦！」这个办法不太合适，再想想别的吧！",
+            "audio": "audio/ch02-scene-08-wrong-chen.mp3"
+          }
+        }
+      },
+      "recapCaption": "小鱼迎船"
+    },
+    {
+      "id": "scene-09",
+      "backgroundUrl": "images/bg-forest.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 18,
+            "y": 28
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 40,
+            "y": 28
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "honey-trail",
+          "assetId": "prop-trail",
+          "position": {
+            "x": 52,
+            "y": 24
+          },
+          "visible": false,
+          "animations": {
+            "appear": {
+              "row": 0,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "奇异果林到了！巧克力色的树干、薄荷绿的叶子，彩色浆果像宝石一样挂在枝头。可是林间小路岔成了好几条，小熊转了两圈，挠挠头说：「哎呀，我认不出哪条路是通向我的小木屋了，我出门太久啦！」小勇士看着小熊，小熊有点着急，又有点兴奋，因为他知道，家就在这附近。小勇士说：「别急，我们一起想办法。」快选一个魔法汉字，帮帮他们吧！",
+        "audio": "audio/ch02-scene-09-narration.mp3"
+      },
+      "challenge": {
+        "candidates": [
+          {
+            "char": "云",
+            "pinyin": "yún",
+            "icon": "☁️"
+          },
+          {
+            "char": "草",
+            "pinyin": "cǎo",
+            "icon": "🌿"
+          },
+          {
+            "char": "家",
+            "pinyin": "jiā",
+            "icon": "🏠"
+          }
+        ],
+        "correctCharId": "家",
+        "onCorrect": {
+          "magicDialogue": "太厉害了！「家」字发出蜂蜜一样的暖黄色光，化作一串亮闪闪的小脚印，落在其中一条小路上。小脚印一步一步指向林子深处，像在说「跟我来」。小熊一眼就认出来了，高兴地跳起来：「是回家的路！就是这条路！」",
+          "audio": "audio/ch02-scene-09-correct.mp3",
+          "spriteAction": {
+            "spriteId": "honey-trail",
+            "animation": "appear"
+          },
+          "characterAction": [
+            {
+              "spriteId": "character",
+              "animation": "walk"
+            },
+            {
+              "spriteId": "bear",
+              "animation": "jump"
+            }
+          ],
+          "completionDialogue": "小勇士和小熊跟着蜂蜜色的小脚印往前走，穿过果树，绕过花丛。小熊的手推车轱辘轱辘响着，车里的小花也摇摇摆摆，像是在说「我们快到家啦」。小脚印一直延伸到前面，小勇士知道，小熊的家马上就到了。",
+          "completionAudio": "audio/ch02-scene-09-complete.mp3",
+          "nextScene": "scene-10",
+          "slideOffscreenSpriteIds": [
+            "character",
+            "bear",
+            "honey-trail"
+          ]
+        },
+        "onWrong": {
+          "云": {
+            "dialogue": "一朵软绵绵的白云飘下来，横在路口，像张大床。小熊靠上去，眼睛就眯起来了，还打了个小呼噜，差点睡着。小勇士推推小熊：「醒醒，我们还要找路呢！」这个办法不太妙，快换个字吧！",
+            "audio": "audio/ch02-scene-09-wrong-yun.mp3"
+          },
+          "草": {
+            "dialogue": "青草蹭蹭长得比小熊还高，林间小路变成了绿色大迷宫。两个小伙伴钻进去，转来转去又回到原点，草叶还挠得小熊脖子痒痒，咯咯直笑。这个办法不太合适，再想想别的吧！",
+            "audio": "audio/ch02-scene-09-wrong-cao.mp3"
+          }
+        }
+      },
+      "recapCaption": "回家小路"
+    },
+    {
+      "id": "scene-10",
+      "backgroundUrl": "images/bg-forest.webp",
+      "sprites": [
+        {
+          "id": "character",
+          "assetId": "char-hero",
+          "position": {
+            "x": 25,
+            "y": 30
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        },
+        {
+          "id": "bear",
+          "assetId": "char-bear",
+          "position": {
+            "x": 50,
+            "y": 30
+          },
+          "visible": true,
+          "animations": {
+            "idle": {
+              "row": 0,
+              "frameCount": 4,
+              "fps": 8,
+              "loop": true
+            },
+            "walk": {
+              "row": 1,
+              "frameCount": 6,
+              "fps": 12,
+              "loop": false
+            },
+            "jump": {
+              "row": 2,
+              "frameCount": 4,
+              "fps": 10,
+              "loop": false
+            }
+          }
+        }
+      ],
+      "narration": {
+        "text": "顺着蜂蜜色的小脚印，小勇士和小熊走到了一棵大树下。树下站着一座小小的蜂蜜色木屋，屋顶爬着绿藤，门口还挂着一串小铃铛。小熊的木头手推车轱辘轱辘停下来，小熊的眼睛亮晶晶的，说：「到家啦！」他拉着小勇士的手，跑到木屋前。小熊把手推车里的花盆捧下来，蹲在门前，用小铲子挖了一个小坑，把花一棵一棵种进了土里。「这样你就能一直陪着我啦，」小熊对花说，又抬头对小勇士说，「谢谢你帮我救活它们呀。」小勇士摇摇头说：「不客气，我们是好朋友嘛。」小熊拉着小勇士进了木屋，倒了两杯热乎乎的蜂蜜浆果茶，甜甜的，暖暖的。小熊说：「明天，我要带你去一个我最喜欢的地方，咱们继续冒险！」小勇士端起杯子，和小熊碰了碰杯：「好呀，明天见！」阳光透过窗户洒进来，把木屋染成了金黄色。这一天，小勇士陪小熊回了家，而旅途，才刚刚开始呢。",
+        "audio": "audio/ch02-scene-10-narration.mp3"
+      },
+      "recapCaption": "甜蜜归家"
+    }
+  ],
+  "ending": {
+    "title": "小熊到家了",
+    "dialogue": "小熊终于回到了温暖的蜂蜜小木屋，把一路陪伴的花儿种在了门前。两个好朋友喝着蜂蜜浆果茶，约定明天还要一起去探险。小勇士，你和小熊一起走过了灯塔、山谷、沼泽、荒漠，用魔法汉字帮助了路上的每一个朋友。世界记得你做的每一件事，而旅途，还在前方等着你。下一站，小熊会带你去哪里呢？我们明天见！",
+    "audio": "audio/ch02-ending-celebration.mp3"
+  }
+}
