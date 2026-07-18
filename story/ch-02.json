@@ -15,11 +15,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -157,11 +170,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -299,11 +325,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -441,11 +480,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -583,11 +635,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -725,11 +790,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -867,11 +945,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -1009,11 +1100,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -1151,11 +1255,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
@@ -1293,11 +1410,24 @@
           },
           "visible": true,
           "animations": {
-            "idle": {
-              "row": 0,
-              "frameCount": 4,
-              "fps": 8,
-              "loop": true
+              "idle": {
+                "row": 0,
+                "frameCount": 6,
+                "fps": 8,
+                "loop": true
+              },
+              "walk": {
+                "row": 1,
+                "frameCount": 8,
+                "fps": 12,
+                "loop": false
+              },
+              "jump": {
+                "row": 4,
+                "frameCount": 5,
+                "fps": 10,
+                "loop": false
+              }
             },
             "walk": {
               "row": 1,
